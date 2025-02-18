@@ -1,6 +1,5 @@
 export default async function DocsPage({params}:{params:Promise<{slug:string[]}>}){
     const {slug} = await params;
-    console.log(slug);
 
     if(slug?.length === 2){
         return (
@@ -17,7 +16,7 @@ export default async function DocsPage({params}:{params:Promise<{slug:string[]}>
     }
     return (
         <>
-            <h1 className="heading">DocsPage</h1>
+            <h1 className="heading">Docs Page</h1>
         </>
     )
 }
